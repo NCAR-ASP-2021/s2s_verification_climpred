@@ -163,3 +163,36 @@ sources:
       urlpath: /glade/campaign/mmm/c3we/jaye/S2S_zarr/NCEP.{{data}}.{{lead}}.{{dim}}.zarr
       chunks: auto
       use_cftime: True
+  
+  cat_edges:
+    description: tercile category edges, computed by notebook add_path
+    parameters:
+      model:
+        description: model or observations
+        type: str
+        default: OBS
+        allowed: [OBS, ECMWF, ECCC, NCEP]
+      data:
+        description: data type
+        type: str
+        default: raw
+        allowed: [raw, anom] # anom for anomaly
+      lead:
+        description: aggregation of leads in forecasts and time in observations
+        type: str
+        default: daily
+        allowed: [daily, biweekly]
+      dim:
+        description: >-
+          dimensionality of the data
+            geospatial contains lon and lat
+            country contains no lon and lat but aggregated data by country
+        type: str
+        default: geospatial
+        allowed: [geospatial, country]
+    driver: zarr
+    args:
+      urlpath: /glade/campaign/mmm/c3we/jaye/S2S_zarr/{{model}}.{{data}}.cat_edges.{{lead}}.{{dim}}.zarr
+      chunks: {'lon':-1 ,'lat':-1, 'dayofyear': -1}
+      use_cftime: True
+      decode_timedelta: False
