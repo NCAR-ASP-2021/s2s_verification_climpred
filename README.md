@@ -14,6 +14,14 @@ we use `climpred` https://climpred.readthedocs.io/en/stable/ to verify subseason
 - [contribute to climpred](https://github.com/NCAR-ASP-2021/s2s_verification_climpred/issues/4)
 
 
+# Contents
+
+- 'ASP_data_catalog.yml': `intake` [catalog](https://intake.readthedocs.io/en/latest/catalog.html#yaml-format), see `data_access_with_intake.ipynb`
+- `s2s-climpred.yaml`: [conda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) file
+- `cluster.ipynb`: Start a [`PBS`-Cluster](https://github.com/NCAR/ncar-jobqueue) on `casper`, needed for big data (10GB+)
+- `climpred_*.ipynb`: [Jupyter notebooks](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html) about `climpred` and student projects
+
+
 # Environment
 
 It is recommented to use the enviroment `add_name` on `NCAR_casper`.
@@ -43,6 +51,7 @@ Else create your own environment:
     - classes: https://climpred.readthedocs.io/en/stable/prediction-ensemble-object.html
     - list of initialized public datasets to work with: https://climpred.readthedocs.io/en/stable/initialized-datasets.html
     - terminology: https://climpred.readthedocs.io/en/stable/terminology.html
+    - alignment: https://climpred.readthedocs.io/en/stable/alignment.html
     
 --- 
 
