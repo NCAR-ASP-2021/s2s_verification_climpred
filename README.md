@@ -6,6 +6,14 @@ In the [S2S verification tutorial](https://docs.google.com/document/d/1nQOyjjAjd
 we use `climpred` https://climpred.readthedocs.io/en/stable/ to verify subseasonal-to-seasonal (S2S) forecasts against observations.
 
 
+# Student projects
+
+- [Evaluate metrics across models and model versions](https://github.com/NCAR-ASP-2021/s2s_verification_climpred/issues/1)
+- [Predictability limits](https://github.com/NCAR-ASP-2021/s2s_verification_climpred/issues/2)
+- [State-dependent predictability](https://github.com/NCAR-ASP-2021/s2s_verification_climpred/issues/3)
+- [contribute to climpred](https://github.com/NCAR-ASP-2021/s2s_verification_climpred/issues/4)
+
+
 # Environment
 
 It is recommented to use the enviroment `add_name` on `NCAR_casper`.
