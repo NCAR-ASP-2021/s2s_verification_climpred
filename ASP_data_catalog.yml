@@ -3,7 +3,7 @@ plugins:
     - module: intake_xarray
 
 sources:
-  obs:
+  OBS:
     description: >-
       Observations to verify forecasts with. Most variables are from
       NOAA CPC, but geopotential height gh_500 is from ERA.
