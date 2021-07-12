@@ -31,7 +31,9 @@ dependencies:
   #- esmpy # regridding
   #- xesmf
   # netcdf and data access related
-  #- intake-xarray
+  - intake-xarray
+  - aiohttp
+  - fsspec
   - cftime
   - netcdf4=1.5.4
   #- cfgrib
