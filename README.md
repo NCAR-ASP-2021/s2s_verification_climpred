@@ -24,7 +24,7 @@ we use `climpred` https://climpred.readthedocs.io/en/stable/ to verify subseason
 
 # Environment
 
-It is recommented to use the enviroment `add_name` on `NCAR_casper`.
+It is recommented to use the enviroment `s2s-climpred` on `NCAR_casper`.
 
 Else create your own environment:
 
